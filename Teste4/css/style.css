@@ -14,15 +14,128 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
-    text-align: center;
-    background-color: hsl(30, 18%, 87%);
+    background-color: hsl(30, 54%, 90%);
+    color: hsl(24, 5%, 18%);
 }
 
 .conteudo {
     width: 100%;
-    max-width: 347px;
-    text-align: center;
-    padding: 30px;
+    max-width: 736px;
+    padding: 40px;
     background-color: white;
+    border-radius: 16px;
+    
+}
 
+img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-family: 'Young Serif', serif;
+  font-size: 36px;
+  margin-bottom: 16px;
+  color: hsl(24, 5%, 18%);
+  margin: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 24px;
+  margin: 10px;
+}
+
+/*preparação*/
+
+.preparacao {
+  background-color: hsl(330, 100%, 98%);
+  padding: 24px;
+  margin-bottom: 32px;
+  border-radius: 12px; 
+}
+
+.preparacao h3 {
+  color:hsl(332, 51%, 32%);
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.preparacao ul {
+  list-style: disc;
+  list-style-position: inside;
+  padding-left: 0;
+  color: hsl(30, 10%, 34%);
+}
+
+.preparacao li {
+  margin-bottom: 8px;
+}
+
+.ingredientes {
+  font-size: 28px; 
+  font-family: 'Young Serif',serif;
+  margin-bottom: 16px;
+  
+}
+
+ul, ol {
+  padding-left: 20px;
+  margin-bottom: 32px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/*instruções*/
+.instrucoes ol {
+  color: hsl(30, 10%, 34%);
+  list-style-position: inside;
+  list-style: decimal;
+}
+
+.instrucoes li::marker {
+  font-weight: bold;
+  color:hsl(14, 45%, 36%);
+}
+
+
+/* Tabela de nutrição */
+.nutrition {
+  margin-top: 30px;
+  padding: 20px 0;
+}
+
+.nutrition h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #7b3f00; /* marrom escuro suave */
+}
+
+.nutrition p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.nutrition td {
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 16px;
+  color: #333;
+}
+
+.nutrition .value {
+  font-weight: bold;
+  color: #7b3f00;
+  text-align: right;
 }
