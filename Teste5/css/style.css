@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/*Geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    justify-content: center;
+    display: flex;
+}
+
+.card {
+    background-color: white;
+    width: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 12px;
+    display: flex;
+    height: 400px;
+}
+
+.card-imagem {
+    margin: 0;
+}
+
+.card-imagem img {
+    border-radius: 10px 0px 0px 10px;
+    height: 100%;
+    width: 225px;
+}
+
+.conteudo {
+    padding: 5px;
+}
+
+.conteudo p {
+    font-size: 14px;
+    margin: 12px;
+}
+
+.categoria {
+    color: hsl(228, 12%, 48%);
+    font-size: 11px;
+    padding: 15px;
+}
+
+.titulo-produto {
+    font-size: 30px;
+    margin: 8px;
+    display: flex;
+    width: 200px;
+}
+
+.descricao {
+    color: hsl(228, 12%, 48%);
+    width: 200px;
+}
+
+.preco {
+    padding: 10px;
+}
+
+.desconto {
+    font-size: 25px;
+    color:hsl(228, 12%, 48%);
+}
+
+.preco-antigo {
+    font-size: 12px;
+    margin: 5px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
