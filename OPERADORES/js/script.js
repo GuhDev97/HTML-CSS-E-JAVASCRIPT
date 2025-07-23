@@ -50,3 +50,43 @@ console.log(5 <= 5);
 console.log(5 < 5);
 console.log(10 == 10);
 console.log(10 == 9);
+
+// 10 - Idêntico
+console.log(9 == "9");
+
+console.log(9 === "9");
+
+console.log(9 != "9");
+
+console.log(9 !== "9");
+
+// 11 - Operadores
+
+console.log(true && true);
+//verdadeiro
+console.log(true && false);
+//falso
+console.log(5 > 2 && 2 < 10);
+//verdadeiro
+console.log(5 > 2 && "Matheus" === 1);
+//falso
+console.log(5 > 2 || "Matheus" === 1);
+//verdadeiro
+console.log(5 < 2 || 5 > 100);
+//falso
+console.log(!true);
+//falso
+console.log(!5 > 2);
+//falso
+
+// 12 - empty values
+console.log(typeof null, typeof undefined);
+
+console.log(null === undefined);
+//falso
+console.log(null == undefined);
+//verdadeiro
+console.log(null == false);
+//falso
+console.log(undefined == false);
+//falso
