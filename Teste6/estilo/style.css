@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/* Geral */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+.titulo1 {
+    font-style: oblique;
+    font-weight: normal;
+    margin: 5px;
+    padding: 2px;
+    
+}
+
+body h1, p {
+    margin: 5px;
+    padding: 2px;
+}
+
+.container {
+    background-color: white;
+}
+
+.header {
+    text-align: center;
+    color: hsl(212, 7%, 38%);
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 0%;
+    left: 34%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+
+.bloco1 {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 -4px 0 hsl(0, 78%, 62%), 3px 3px 95px hsl(210, 33%, 86%);
+    width: 340px;
+    height: 210px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: hsl(212, 7%, 38%);
+}
+
+.bloco1 img {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 60%;
+    left: 75%;
+}
+
+.bloco2 {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 -4px 0 hsl(212, 86%, 64%), 3px 3px 95px hsl(210, 33%, 86%);
+    width: 340px;
+    height: 210px;
+    position: absolute;
+    top: 60%;
+    left: 70%;
+    transform: translate(-20%, -50%);
+    border: 3px;
+    font-size: 14px;
+    color: hsl(212, 7%, 38%);
+}
+
+.bloco2 img {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 60%;
+    left: 75%;
+}
+
+.bloco3 {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 -4px 0 hsl(34, 97%, 64%), 3px 3px 95px hsl(210, 33%, 86%);
+    width: 340px;
+    height: 210px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 14px;
+    color: hsl(212, 7%, 38%);
+}
+
+.bloco3 img {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 60%;
+    left: 75%;
+}
+
+.bloco4 {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 -4px 0  hsl(180, 62%, 55%), 3px 3px 95px hsl(210, 33%, 86%);
+    width: 340px;
+    height: 210px;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-80%, -50%);
+    font-size: 14px;
+    color: hsl(212, 7%, 38%);
+}
+
+.bloco4 img {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 60%;
+    left: 75%;
+}
