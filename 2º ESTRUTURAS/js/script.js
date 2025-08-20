@@ -69,42 +69,42 @@ console.log(Math.ceil(5.14));
 //console.warn("aviso!");
 
 // 7 - if
-const m = 10;
+// const m = 10;
 
-if (m > 5) {
-    console.log("M é maior que 5!");
-}
+// if (m > 5) {
+   // console.log("M é maior que 5!");
+// }
 
-const user = "João"
+// const user = "João"
 
-if (user === "João") {
-    console.log("Olá João");
-}
+// if (user === "João") {
+// console.log("Olá João");
+//}
 
-if (user === "Maria") {
-    console.log("Olá Maria!");
-}
+// if (user === "Maria") {
+   // console.log("Olá Maria!");
+// }
 
-console.log (user === "João", user === "Maria");
+// console.log (user === "João", user === "Maria");
 
 // 8 - else
-const loggedIn = false
+// const loggedIn = false
 
-if(loggedIn) {
-    console.log("Está autenticado!");
-} else {
-    console.log("Não está autenticado!");
-}
+// if(loggedIn) {
+  //  console.log("Está autenticado!");
+//} else {
+  //  console.log("Não está autenticado!");
+// }
 
 
-const q = 10
-const w = 15
+// const q = 10
+// const w = 15
 
-if(q> 5 && w > 20){
-    console.log("Números mais altos");
-} else {
-    console.log("Os números não são mais altos");
-}
+// if(q> 5 && w > 20){
+   //  console.log("Números mais altos");
+//} else {
+  //  console.log("Os números não são mais altos");
+// }
 
 // 9 - else if
 // if (1 > 2) {
@@ -128,7 +128,7 @@ if(q> 5 && w > 20){
 
 // 10 - While
 
-let p = 0
+// let p = 0
 
 // while (p < 5) {
  //   console(`Repetindo ${p}`);
@@ -142,3 +142,54 @@ let p = 0
 // while(x > 5) {
   //  console.log(`Imprimindo ${x}`)
 // }
+
+// 11 - do while
+// let o = 10
+
+// do {
+  //  console.log(`Valor de o: ${0}`);
+   // 0--
+// } while(0 > 1);
+
+// 12 - for
+for(let t = 0; t < 10; t++) {
+    console.log("Repetindo algo...");
+}
+
+let r = 10;
+
+for (r; r > 0; r = r - 1) {
+    console.log(`O r está diminuindo: ${r}`);
+}
+
+// 13 - identação
+
+for (let u = 0; u < 10; u++){
+    if (u * 2 > 10) {
+        console.log(`Maior que 10! ${u}`);
+    } else {
+        if (u / 2 === 0) {
+            console.log("deu 0")
+        }
+    }
+}
+
+// 14 - break
+
+for(let g = 20; g > 10; g--) {
+    console.log(`O valor de g é: ${g}`);
+
+    if (g === 12) {
+        console.log("o g é 12!");
+        break;
+    }
+}
+
+// 15 - continue
+for (let s = 1; s < 10; s = s + 1) {
+    // operador resto = %
+    if (s % 2 === 0) {
+        console.log("Número par!");
+        continue;
+    }
+}
