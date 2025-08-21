@@ -193,3 +193,20 @@ for (let s = 1; s < 10; s = s + 1) {
         continue;
     }
 }
+
+// 16 - Switch
+const job = "advogado";
+
+switch (job) {
+    case "Programador":
+        console.log("Você é um programador!");
+        break;
+    case "Advogado":
+        console.log("Você é um advogado!");
+        break;
+    case "Engenheiro":
+        console.log("Você é um engenheiro!");
+        break;
+    default:
+        console.log("Profissão não encontrada");
+}
