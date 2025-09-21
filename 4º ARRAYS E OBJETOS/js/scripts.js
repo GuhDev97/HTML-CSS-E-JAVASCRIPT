@@ -227,3 +227,144 @@ reverseTest.reverse();
 console.log(reverseTest);
 
 
+// 18 - trim
+
+const trimTest = " testando \n  ";
+
+console.log(trimTest);
+
+console.log(trimTest.trim());
+
+console.log (trimTest.length);
+
+console.log(trimTest.trim().length);
+
+// 19 - padstart
+
+const testePadStart = "1";
+
+const newNumber = testePadStart.padStart(4, "0");
+
+console.log(testePadStart);
+
+console.log(newNumber);
+
+const testePadEnd = newNumber.padEnd(10, "0");
+
+console.log(testePadEnd);
+
+// 20 - split 
+
+const frase = "O rato roeu a roupa do rei de roma"
+
+const arrayDaFrase = frase.split(" ");
+
+console.log(arrayDaFrase);
+
+// 21 - join
+
+const fraseDeNovo = arrayDaFrase.join(" ");
+
+console.log(fraseDeNovo);
+
+const itemParaComprar = ["Mouse", "Teclado", "Monitor"];
+
+const fraseDeCompra = `Precisamos comprar: ${itemParaComprar.join(", ")}.`;
+
+console.log(fraseDeCompra);
+
+// 22 - repeat 
+const palavra = "Testando ";
+
+console.log(palavra.repeat(5));
+
+// 23 - rest operator
+
+const somaInfinita = (...args) => {
+    let total = 0;
+    
+    for (let i = 0; i < args.length; i++) {
+        total += args[i];
+    }
+
+    return total;
+};
+
+console.log(somaInfinita(1, 2, 3));
+
+console.log(somaInfinita(1, 20, 35, 155, 2551110));
+
+// 24 - for of
+
+const somaInfinita2 = (...args) => {
+    let total = 0;
+
+    for (num of args) {
+        total += num;
+    }
+
+    return total;   
+};
+
+console.log(somaInfinita2(1, 2, 5));
+
+console.log(somaInfinita2(1, 20, 35, 155, 2551110));
+
+// 25 - destructuring em objetos
+const userDetails = {
+    firstName: "Gustavo",
+    lastName: "Dias",
+    job: "Futuro programador",
+};
+
+const { firstName, lastName, job} = userDetails;
+
+console.log(firstName, lastName, job);
+
+// renomear variaveis
+
+const { firstName : primeiroNome } = userDetails;
+
+console.log(firstName);
+
+console.log(primeiroNome);
+
+
+// 26 - destructuring com arrays 
+const myList = ["Avião", "Submarino", "Carro", "Trator"];
+
+const [veiculoA, veiculoB, veiculoC] = myList
+
+console.log(veiculoA, veiculoB, veiculoC);
+
+// 27 - JSON
+const myJson = '{"name": "Gustavo", "age": 27, "skills": ["java", "JavaScript"]}';
+
+console.log(myJson)
+
+console.log(typeof myJson);
+
+
+// 28 - JSON PARA OBJETO E VICE VERSA   
+const myObject = JSON.parse(myJson);
+
+console.log(myObject);
+
+console.log(myObject.name);
+
+console.log(typeof myObject);
+
+//json invalido
+const badjson = '{"name": Gustavo, "age": 27,}'
+
+//const myNBadObject = json.parse(badJson);
+
+myObject.isOpenToWork = true;
+
+console.log(myObject);
+
+const myNewJson = JSON.stringify(myObject);
+
+console.log(myNewJson);
+
+console.log(typeof myNewJson);
