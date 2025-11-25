@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+}
+
+html, body {
+    background-color: hsl(260, 100%, 95%);
+}
+
+img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    
+}
+
+blockquote {
+    font-weight: bold;
+    color: white;
+    margin: 8px;
+    
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card1, .card2, .card3, .card4, .card5 {
+    border: 1px solid black;
+    padding: 16px;
+    margin: 16px;
+}
+
+.card1 {
+   background-color: hsl(263, 55%, 52%);
+   width: 600px;
+   height: 300px;
+   border-radius: 8px;
+   
+}
+
+.card1 h3 {
+    color: white;
+}
+
+.card1 h4 {
+    color: white;
+}
