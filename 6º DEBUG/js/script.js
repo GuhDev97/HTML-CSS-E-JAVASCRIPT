@@ -46,3 +46,64 @@ console.log("executou o loop");
 if (c > 5) {
     c = 25;
 }
+
+
+// 4 - tratamento de dados
+
+function checkNumber(n) {
+    const result = Number(n);
+
+    if (Number.isNaN(result)) {
+        console.log("Valor incorreto!")
+    }
+
+    console.log("Valor correto!");
+    return result;
+}
+
+checkNumber(5);
+checkNumber("10");
+checkNumber({});
+checkNumbe("teste")
+
+// 5 - exceptions
+
+let x = 10
+
+if(x != 11) {
+    throw new Error ("O valor de x não pode ser diferente de 11")
+}
+
+
+// 6 - try catch
+
+try {
+    const soma = x + y;
+} catch (error){
+    console.log(`Erro no programa: ${error}`);
+}
+
+
+// finally
+
+try {
+    const value = checkNumber("1");
+
+    if (!value) {
+        throw new Error("Valores inválidos");
+    }
+} catch (error) {
+    console.log(`Opa, aconteceu um problema: ${error}`);
+} finally {
+    console.log("O código foi executado!");
+
+}
+
+// 8- assertion
+function checkArray{arr} {
+    if (arr.lengh ===0) {
+        throw new Error("O array precusa ter elementos")
+    }else {
+        console.log(`O array tem ${arr.lengh} elementos`);
+    }
+}
